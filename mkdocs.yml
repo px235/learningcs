@@ -1,0 +1,82 @@
+# Project information
+site_name: Learning CS
+site_description: Document my cs knowledge structure in Wiki pattern;
+site_author: px235
+site_url: https://px235.github.io/learningcs/
+
+# Repository
+repo_name: px235/learningcs
+repo_url: https://github.com/px235/learningcs
+
+# Copyright
+copyright: Built by <a href="http://github.com/px235">px235</a> &copy; 2023
+
+# Configuration
+theme:
+  name: material
+  language: en
+  custom_dir: custom
+  favicon: assets/favicon.png
+  palette:
+    # Light mode
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: teal
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: cyan
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: fontawesome/solid/earth-americas
+    repo: fontawesome/brands/github
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/px235
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/px235
+    - icon: fontawesome/solid/code
+      link: https://px235.github.io/learningcs
+
+extra_css:
+  - css/katex.css
+  - css/custom.css
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css
+
+extra_javascript:
+  - js/katex.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js
+
+# Extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - toc:
+      permalink: false
+
+nav:
+  - Preface: index.md
+  - I Foundations:
+      - System Design: system-design.md
+#          - 1.1 Algorithms: Chap01/1.1.md
+#          - 1.2 Algorithms as a technology: Chap01/1.2.md
+#          - Chap 1 Problems:
+#              - Problem 1-1: Chap01/Problems/1-1.md
+#      - 2 Getting Started:
